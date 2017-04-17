@@ -1,0 +1,203 @@
+@font-face
+{
+    font-family: 'Samim';
+    src:url('../fonts/Samim.eot?#') format('eot'),
+        url('../fonts/Samim.woff') format('woff'),
+        url('../fonts/Samim.ttf') format('truetype');
+
+    font-family: 'Shabnam';
+    src:url('../fonts/Shabnam.eot?#') format('eot'),
+        url('../fonts/Shabnam.woff') format('woff'),
+        url('../fonts/Shabnam.ttf') format('truetype');
+}
+
+body
+{
+  background-color: #00BCD4;
+
+}
+.background-image {
+  background-image: url('../img/bg.jpg');
+  background-size:cover;
+  display: block;
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+  width: 101%;
+  height: 101%;
+  top: 0px;
+  right:0px;
+  left:0px;
+  bottom:0px;
+  position: fixed;
+  z-index: -1;
+}
+.logo
+{
+  height: 248px;
+  width: 347px;
+  margin: 150px auto 0 auto;
+  /* position: relative; */
+}
+
+.logo .tooltiptext
+ {
+  visibility: hidden;
+  font-family: Shabnam;
+  width: 450px;
+  background-color: #3498DB;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 75%;
+  left:38%;
+  margin-left: -60px;
+}
+
+.logo:hover .tooltiptext
+{
+    visibility: visible;
+        boottom: 100%;
+}
+
+.logo .tooltiptext::after
+ {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #3498DB transparent transparent transparent;
+}
+.butt
+{
+  width: 347px;
+  height: auto;
+  margin: 50px auto 0 auto;
+}
+#myBtn
+{
+  display: inline-block;
+  width: 100%;
+  padding: 8px 25px;
+  font-size: 25px;
+  font-family: Shabnam;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #3498DB;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 8px #999;
+}
+#enter
+{
+  display: inline-block;
+  width: 464px;
+  padding: 8px 25px;
+  margin-top: 25px;
+  font-size: 25px;
+  font-family: Shabnam;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #3498DB;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 8px #999;
+}
+#eneter:hover {background-color: #1E8BC3}
+
+#eneter:active
+{
+  background-color: #1E8BC3;
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+#myBtn:hover {background-color: #1E8BC3}
+
+#myBtn:active
+{
+  background-color: #1E8BC3;
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+.modal
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 135px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
+}
+.modal-content
+{
+    position: relative;
+    background-color: #fefefe;
+    border-radius: 4px;
+    margin: auto;
+    padding: 35px 0;
+    width: 535PX;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@-webkit-keyframes animatetop
+ {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop
+{
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.close
+{
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus
+{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+form
+{
+    margin:0 auto;
+    width:459px;
+}
+input
+  {
+	height:33px;
+  width: 439px;
+	background:#efefef;
+	border:1px solid #dedede;
+	padding:10px;
+	margin: 3px auto;
+	font-size:0.9em;
+	color: black;
+  font-family: 'Shabnam';
+}
