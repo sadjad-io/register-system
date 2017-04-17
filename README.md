@@ -1,3 +1,2 @@
 # register-system
-We wrote this program in the first semester University
-register.sadjadio.ir
+We wrote this program in the first semester University for Our meetings Registration !
